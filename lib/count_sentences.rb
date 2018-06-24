@@ -19,7 +19,7 @@ class String
     # self.each_char { |chr|  count += 1 if chr == "." || chr == "!" || chr == "?"}
     # this code doesn't work for: "Hi!! I am Nhinh...."
     for i in 0..self.length do
-      count += 1 if ((self[i] == /\.|\?|\!/) && self[i+1] != self[i])
+      count += 1 if ((self[i] == "." || self[i] == "!" || self[i] == "?") && self[i+1] != self[i])
     end
     count
   end
